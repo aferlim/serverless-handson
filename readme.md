@@ -41,6 +41,8 @@ configurar o provider, para isso crie o arquivo _provider.tf_
 
     provider "azurerm" {
         version = "~> 2.4.0"
+        features {}
+
     }
 
 Criar arquivo de variáveis _variables.tf_
