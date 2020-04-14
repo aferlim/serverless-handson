@@ -292,6 +292,13 @@ Outputs (output.tf)
         value = azurerm_function_app.vote_function.default_hostname
     }
 
+Adicionando nosso data Source:
+
+    data "azurerm_storage_account" "cloudshell" {
+        name                = "cs2100300009a1a5d12"
+        resource_group_name = "cloud-shell-storage-eastus"
+    }
+
 ### Adicione o arquivo gitignore na solução
 
 O arquivo se encontra nesse repositório.
@@ -381,7 +388,7 @@ https://github.com/aferlim/azure-function-signalr
 
     Subscription needs a storage account and a website
 
-    azureSubscription: "Visual Studio Professional (660d3b8a-8752-4b02-87f5-e4b07c5ac69e)"
+    azureSubscription: "Subscription"
 
     This needs to have a static website setup with the default container ($web)
     clientBlobAccountName: "ltmserverlessstatic"
